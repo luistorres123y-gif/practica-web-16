@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  /* Neutral */
+  --color-neutral-900: hsl(33, 15%, 15%);
+  --color-neutral-800: hsl(33, 22%, 20%);
+  --color-neutral-700: hsl(32, 20%, 29%);
+  --color-neutral-600: hsl(33, 17%, 41%);
+  --color-neutral-400: hsl(36, 22%, 86%);
+  --color-neutral-200: hsl(30, 24%, 93%);
+  --color-neutral-100: hsl(35, 60%, 96%);
+  --color-neutral-50: hsl(40, 60%, 98%);
+  --color-neutral-0: hsl(0, 0%, 100%);
+
+  /* Sun */
+  --color-sun-500: hsl(42, 83%, 58%);
+  --color-sun-300: hsl(44, 84%, 75%);
+  --color-sun-200: hsl(45, 100%, 74%);
+  --color-sun-50: hsl(41, 100%, 93%);
+
+  /* Terracotta */
+  --color-terracotta-700: hsl(15, 69%, 37%);
+  --color-terracotta-600: hsl(15, 74%, 41%);
+  --color-terracotta-500: hsl(18, 62%, 47%);
+  --color-terracotta-400: hsl(22, 72%, 56%);
+
+  /* Blue */
+  --color-blue-500: hsl(230, 49%, 56%);
+
+  /* Rose */
+  --color-rose-500: hsl(340, 48%, 52%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-neutral-100);
+    color: var(--color-neutral-900);
+    font-family: Arial, sans-serif;
+}
+
+.app-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1;
+    min-width: 0;
+    padding: 40px 60px;
+    overflow-y: auto;
+}
+
+/* TABLETS */
+
+@media (max-width: 900px) {
+    .sidebar {
+        width: 220px;
+        min-width: 220px;
+        padding: 25px 15px;
+    }
+
+    .main-content {
+        padding: 30px 25px;
+    }
+}
+
+/* CELULARES */
+
+@media (max-width: 600px) {
+    .app-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        min-width: 0;
+        padding: 20px;
+        border-right: none;
+        border-bottom: 1px solid var(--color-neutral-400);
+    }
+
+    .main-content {
+        padding: 25px 15px;
+    }
+}
+
+/* TAREA 1: MENU LATERAL */
+
+.sidebar {
+    width: 260px;
+    min-width: 260px;
+    background-color: var(--color-neutral-0);
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 1px solid var(--color-neutral-400);
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.brand-logo-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.brand-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    margin: 0;
+}
+
+.sidebar-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.nav-item a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: var(--color-neutral-600);
+    padding: 10px 12px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.nav-item.active a,
+.nav-item a:hover {
+    background-color: var(--color-neutral-200);
+    color: var(--color-neutral-900);
+}
+
+.nav-icon {
+    width: 18px;
+    height: 18px;
+}
+
+.badge {
+    margin-left: auto;
+    background-color: var(--color-rose-500);
+    color: var(--color-neutral-0);
+    font-size: 0.75rem;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+/* CLIMA */
+
+.weather-widget {
+    background-color: var(--color-sun-50);
+    padding: 16px;
+    border-radius: 12px;
+    margin-top: auto;
+    margin-bottom: 20px;
+}
+
+.weather-subtitle {
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: var(--color-neutral-700);
+    letter-spacing: 0.5px;
+}
+
+.weather-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 6px 0;
+}
+
+.weather-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.weather-temp {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--color-neutral-900);
+}
+
+.weather-desc {
+    font-size: 0.8rem;
+    color: var(--color-neutral-700);
+    margin-bottom: 0;
+}
+
+/* PIE DEL MENU */
+
+.sidebar-footer {
+    font-size: 0.65rem;
+    color: var(--color-neutral-600);
+    line-height: 1.4;
+}
+
+.sidebar-footer p {
+    margin: 5px 0;
+}
