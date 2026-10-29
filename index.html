@@ -1,127 +1,69 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="styles.css
-    "
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Practica Trabajo 16P</title>
-  </head>
-  <body>
+</head>
+<body>
     <div class="sidebar">
-      <div class="sidebar-header">
-        <img
-          src="assets/images/logo.svg"
-          alt="Sol Logo"
-          class="brand-logo-icon"
-        />
-        <h1 class="brand-name">Maison Soleil</h1>
-      </div>
-
-      <div class="sidebar-nav">
-        <ul>
-          <li class="nav-item active">
-            <a href="#">
-              <img
-                src="assets/images/icon-bed.svg"
-                alt="Stay icon"
-                class="nav-icon"
-              />
-              Your stay
-              <span class="badge">1</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#"
-              ><img
-                src="assets/images/icon-house.svg"
-                alt="House icon"
-                class="nav-icon"
-              />
-              The house</a
-            >
-          </li>
-          <li class="nav-item">
-            <a href="#"
-              ><img
-                src="assets/images/icon-pin.svg"
-                alt="Town icon"
-                class="nav-icon"
-              />
-              Around town</a
-            >
-          </li>
-          <li class="nav-item">
-            <a href="#"
-              ><img
-                src="assets/images/icon-breakfast-outline.svg"
-                alt="Breakfast icon"
-                class="nav-icon"
-              />
-              Breakfast</a
-            >
-          </li>
-          <li class="nav-item">
-            <a href="#"
-              ><img
-                src="assets/images/icon-mail.svg"
-                alt="Messages icon"
-                class="nav-icon"
-              />
-              Messages</a
-            >
-          </li>
-        </ul>
-      </div>
-
-      <div class="weather-widget">
-        <span class="weather-subtitle">TODAY IN CASSIS</span>
-        <div class="weather-content">
-          <img
-            src="assets/images/icon-weather.svg"
-            alt="Weather icon"
-            class="weather-icon"
-          />
-          <div class="weather-temp">27°</div>
+        <div class="sidebar-header">
+            <img src="assets/images/logo.svg" alt="Sol Logo" class="brand-logo-icon">
+            <h1 class="brand-name">Maison Soleil</h1>
         </div>
-        <p class="weather-desc">Sunny · light breeze</p>
-      </div>
 
-      <div class="sidebar-footer">
-        <p>EST. 1987</p>
-        <p>MAISON SOLEIL · 12 RUE DES OLIVIERS · CASSIS</p>
-        <p>© 2026 MAISON SOLEIL</p>
-      </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li class="nav-item active">
+                    <a href="#">
+                        <img src="assets/images/icon-bed.svg" alt="" class="nav-icon">
+                        <span>Your stay</span>
+                        <span class="badge">1</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">
+                        <img src="assets/images/icon-house.svg" alt="" class="nav-icon">
+                        <span>The house</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">
+                        <img src="assets/images/icon-pin.svg" alt="" class="nav-icon">
+                        <span>Around town</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">
+                        <img src="assets/images/icon-breakfast-outline.svg" alt="" class="nav-icon">
+                        <span>Breakfast</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">
+                        <img src="assets/images/icon-mail.svg" alt="" class="nav-icon">
+                        <span>Messages</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="weather-widget">
+            <span class="weather-subtitle">TODAY IN CASSIS</span>
+            <div class="weather-content">
+                <img src="assets/images/icon-weather.svg" alt="Sunny" class="weather-icon">
+                <div class="weather-temp">27°</div>
+            </div>
+            <p class="weather-desc">Sunny · light breeze</p>
+        </div>
+
+        <div class="sidebar-footer">
+            <p>EST. 1987</p>
+            <p>MAISON SOLEIL · 12 RUE DES OLIVIERS · CASSIS</p>
+            <p>© 2026 MAISON SOLEIL</p>
+        </div>
     </div>
-
-    <!-- TAREA 2: ENCABEZADO Y BIENVENIDA -->
-
-    <header class="content-header">
-      <div class="breadcrumb">
-        <span>BOOKING</span>
-        <span class="breadcrumb-separator">&gt;</span>
-        <span class="current">CONFIRMED</span>
-      </div>
-      <h2 class="welcome-title">Bienvenue, <span>Lucia.</span></h2>
-      <div class="action-buttons">
-        <button
-          type="button"
-          class="btn btn-secondary"
-          onclick="window.print()"
-        >
-          Print receipt
-        </button>
-        <button
-          type="button"
-          class="btn btn-primary"
-          onclick="alert('Podés agregar tu reserva al calendario desde aquí.')"
-        >
-          Add to calendar
-        </button>
-      </div>
-    </header>
-  </body>
+</body>
 </html>
+
