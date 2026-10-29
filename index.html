@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
 
   <title>Frontend Mentor | Hotel booking confirmation page</title>
 
@@ -86,32 +87,52 @@
 
   <!-- Booking cards end -->
 
-  <!-- Guest info row starts -->
+<section class="info-grid">
+  <article class="info-card arrival">
+    <div class="card-header">
+      <img src="./assets/images/icon-key.svg" alt="imagen de una llave" class="icon">
+      <span class="category">ARRIVAL</span>
+      <span class="number">01</span>
+    </div>
 
-  <!-- Arrival -->
-  Arrival
-  01
-  Check-in from 15:00
-  Sat, 25 April
-  Ring the brass bell by the blue door. If we're at the market, the key is in the terracotta pot by the olive tree.
+    <h3>Check-in from 15:00</h3>
+    <small>Sat, 25 April</small>
+    <p>
+      Ring the brass bell by the blue door.
+      If we're at the market, the key is in
+      the terracotta pot.
+    </p>
+  </article>
 
-  <!-- Wifi -->
-  Wifi
-  02
-  Le Soleil · Guest
-  Password below
-  Network
-  Le Soleil · Guest
-  Password
-  soleil-2026
-  Copy
+  <article class="info-card wifi">
+    <div class="card-header">
+     <img src="./assets/images/icon-wifi.svg" alt="imagen de wifi" class="icon">
+      <span class="category">WI-FI</span>
+      <span class="number">02</span>
+    </div>
 
-  <!-- Breakfast -->
-  Breakfast
-  03
-  Served 8 - 10:30
-  On the terrace
-  Fresh figs, Marseille honey, pain au levain, and espresso. Gluten-free option? Leave a note the night before.
+    <h3>Le Soleil · Guest</h3>
+    <small>Password below</small>
+    <div class="credential">NETWORK <b>Le Soleil · Guest</b></div>
+    <div class="credential">PASSWORD <b>soleil-2026</b></div>
+  </article>
+
+  <article class="info-card breakfast">
+    <div class="card-header">
+    <img src="./assets/images/icon-breakfast.svg" alt="imagen de un desayuno" class="icon">
+      <span class="category">BREAKFAST</span>
+      <span class="number">03</span>
+    </div>
+
+    <h3>Served 8 10:30</h3>
+    <small>On the terrace</small>
+    <p>
+      Fresh figs, Marseille honey, pain au levain
+      and espresso. Gluten-free option?
+      Leave a note the night before.
+    </p>
+  </article>
+</section>
 
   <!-- Guest info row ends -->
 
